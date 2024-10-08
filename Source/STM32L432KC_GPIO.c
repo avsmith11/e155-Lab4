@@ -23,8 +23,8 @@ void pinMode(int pin, int function) {
 }
 
 void initGPIOA() {
-    pinMode(2, GPIO_ALT); // set PA2 to Alt Func
-    GPIO_AFRL &= ~(1111 << 24); //clear AFSEL6
-    GPIO_AFRL |= (1110 << 24); //set PA6 to AF14 (TIM16_CH1)
+    pinMode(6, GPIO_ALT); // set PA6 to Alt Func
+    GPIO_AFRL &= ~(0b1111 << 24); //clear AFSEL6
+    GPIO_AFRL |= (0b1110 << 24); //set PA6 to AF14 (TIM16_CH1)
 
 }

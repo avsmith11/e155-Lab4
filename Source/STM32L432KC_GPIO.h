@@ -21,10 +21,10 @@
 
 
 // define GPIO register pointers
-#define GPIO_MODER (*((volatile uint_32 *) (GPIOA_BASE + 0x00)))
-#define GPIO_AFRL (*((volatile uint_32 *) (GPIOA_BASE + 0x20)))
-#define GPIO_AFRH (*((volatile uint_32 *) (GPIO_BASE + 0x24)))
+#define GPIO_MODER (*((volatile uint32_t *) (GPIOA_BASE + 0x00)))
+#define GPIO_AFRL (*((volatile uint32_t *) (GPIOA_BASE + 0x20)))
+#define GPIO_AFRH (*((volatile uint32_t *) (GPIO_BASE + 0x24)))
 
-void initGPIOA()
+void initGPIOA();
 
 #endif

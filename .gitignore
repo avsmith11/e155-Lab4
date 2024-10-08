@@ -1,0 +1,8 @@
+*.emProject
+*.emSession
+*.jlink
+SEGGER_THUMB_Startup.s
+*.xml
+*.icf
+CMSIS_5
+Output
